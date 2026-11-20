@@ -1,0 +1,26 @@
+cd ~/projects/ZeroFlow-Edge
+cat << 'EOF' > .gitignore
+# 构建与编译产物
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.out
+
+# IDE 与系统缓存
+.vscode/
+.cache/
+*.swp
+*~
+
+# 测试媒体资产与录像输出（体积过大不入库）
+assets/*.mp4
+assets/*.onnx
+assets/*.param
+assets/*.bin
+recordings/
+*.ppm
+*.svg
+*.perf.data*
+EOF
