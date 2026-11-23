@@ -1,0 +1,41 @@
+pipeline_name: edge_security_1080p30
+
+shm_pool:
+  pool_name: zeroflow_edge_security
+  slot_count: 16
+  slot_size_mb: 8
+
+nodes:
+  - id: capture_node
+    executable: ./build/capture_node
+    restart_policy: always
+    outputs:
+      - raw_frame
+    params:
+      source_type: file
+      file_path: assets/test_1080p30.mp4
+      backpressure_policy: drop_newest
+
+  - id: infer_node
+    executable: ./build/infer_node
+    restart_policy: on-failure
+    inputs:
+      in_frame: capture_node/raw_frame
+    outputs:
+      - det_event
+    params:
+      model_path: assets/yolov8n.onnx
+      infer_stride: "3"
+      conf_thresh: "0.45"
+
+  - id: stream_record_node
+    executable: ./build/stream_record_node
+    restart_policy: always
+    inputs:
+      in_frame: capture_node/raw_frame
+      in_event: infer_node/det_event
+    outputs: []
+    params:
+      rtsp_url: rtsp://127.0.0.1:8554/live/zeroflow
+      pre_record_sec: "5"
+      post_record_sec: "10"

@@ -39,6 +39,24 @@ target_link_libraries(zeroflow_headers INTERFACE
     rt
 )
 
+#Day 2核心库：YAML 配置解析 与DAG 拓扑校验
+add_library(zeroflow_core STATIC
+    src/core/pipeline_config.cpp
+    src/core/dag_validator.cpp
+)
+target_link_libraries(zeroflow_core PUBLIC
+    zeroflow_headers
+    yaml-cpp
+)
+
+#  CLI 拓扑检查工具
+add_executable(zf_dag_check 
+    src/core/zf_dag_check_main.cpp
+)
+target_link_libraries(zf_dag_check PRIVATE
+    zeroflow_core
+)
+
 # Day 1 契约与 ARM64 硬件原子特性验证程序
 if(ZEROFLOW_BUILD_TESTS)
     enable_testing()
@@ -52,4 +70,13 @@ if(ZEROFLOW_BUILD_TESTS)
         GTest::gtest_main
     )
     add_test(NAME Day1ContractsTest COMMAND test_day1_contracts)
+
+    add_executable(test_dag_parser
+        tests/unit/test_dag_parser.cpp
+    )
+    target_link_libraries(test_dag_parser PRIVATE
+        zeroflow_core
+        GTest::gtest_main
+    )
+    add_test(NAME DagParserTest COMMAND test_dag_parser)
 endif()
