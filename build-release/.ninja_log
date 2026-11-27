@@ -1,0 +1,16 @@
+# ninja log v5
+2	1802	1795515449504175778	CMakeFiles/zeroflow_ipc.dir/src/ipc/shm_arena.cpp.o	77d4b6c803b062f8
+1834	1888	1795515449590837510	libzeroflow_ipc.a	88f30aa1ca8d6293
+4	1938	1795515449640834662	CMakeFiles/bench_shm_pool_stress.dir/tests/benchmark/bench_shm_pool_stress.cpp.o	4f52fd44559132b6
+1940	2294	1795515449990814732	bench_shm_pool_stress	bc844d35f1b3c387
+2	2430	1795515450130806765	CMakeFiles/zf_dag_check.dir/src/core/zf_dag_check_main.cpp.o	1145207420450091
+3	3214	1795515450914095529	CMakeFiles/test_day1_contracts.dir/tests/unit/test_day1_contracts.cpp.o	6ade79de377b2345
+3215	3396	1795515451097418436	test_day1_contracts	d04c4f8fdbb6d0a8
+3	3413	1795515451114084155	CMakeFiles/test_shm_allocator.dir/tests/unit/test_shm_allocator.cpp.o	cb30f47b998cb99f
+3413	3556	1795515451257409340	test_shm_allocator	bb87b8f1346a73fb
+1	3847	1795515451550725998	CMakeFiles/zeroflow_core.dir/src/core/dag_validator.cpp.o	8359732f29be9b68
+3	5227	1795515452927314448	CMakeFiles/test_dag_parser.dir/tests/unit/test_dag_parser.cpp.o	670f86112c25bc3f
+1	5245	1795515452947313312	CMakeFiles/zeroflow_core.dir/src/core/pipeline_config.cpp.o	9ec8c7a43fe021ff
+5246	5281	1795515452987311039	libzeroflow_core.a	719c4b4a913d8984
+5282	5410	1795515453113970517	zf_dag_check	f08c428d5c6c127e
+5282	5451	1795515453153968247	test_dag_parser	cf11406c580ca2f6

@@ -1,0 +1,32 @@
+pipeline_name: dummy_diamond_demo
+
+shm_pool:
+  pool_name: zeroflow_dummy_diamond
+  slot_count: 16
+  slot_size_mb: 2
+
+nodes:
+  - id: dummy_source
+    executable: ./build/zf_dummy_source
+    restart_policy: always
+    outputs:
+      - raw_frame
+    params:
+      fps: "60"
+      payload_bytes: "65536"
+
+  - id: dummy_transform
+    executable: ./build/zf_dummy_transform
+    restart_policy: on-failure
+    inputs:
+      in_frame: dummy_source/raw_frame
+    outputs:
+      - det_event
+
+  - id: dummy_sink
+    executable: ./build/zf_dummy_sink
+    restart_policy: always
+    inputs:
+      in_frame: dummy_source/raw_frame
+      in_event: dummy_transform/det_event
+    outputs: []

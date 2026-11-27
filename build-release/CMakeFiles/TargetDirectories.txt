@@ -1,0 +1,10 @@
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/zeroflow_core.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/zeroflow_ipc.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/zf_dag_check.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/test_day1_contracts.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/test_dag_parser.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/test_shm_allocator.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/bench_shm_pool_stress.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/test.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/edit_cache.dir
+/home/cat/projects/ZeroFlow-Edge/build-release/CMakeFiles/rebuild_cache.dir

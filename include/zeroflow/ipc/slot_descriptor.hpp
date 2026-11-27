@@ -12,6 +12,7 @@ enum class PixelFormat : uint8_t {
     kRgb24         = 2,
     kNv12          = 3,
     kYuyv          = 4,
+    kTensorRaw     = 5,
     kDetectionMeta = 15,
 };
 

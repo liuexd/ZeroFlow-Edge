@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -std=c++17 -o CMakeFiles/zeroflow_core.dir/src/core/pipeline_config.cpp.o -c /home/cat/projects/ZeroFlow-Edge/src/core/pipeline_config.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/src/core/pipeline_config.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -std=c++17 -o CMakeFiles/zeroflow_core.dir/src/core/dag_validator.cpp.o -c /home/cat/projects/ZeroFlow-Edge/src/core/dag_validator.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/src/core/dag_validator.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -std=c++17 -o CMakeFiles/zeroflow_ipc.dir/src/ipc/shm_arena.cpp.o -c /home/cat/projects/ZeroFlow-Edge/src/ipc/shm_arena.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/src/ipc/shm_arena.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -std=c++17 -o CMakeFiles/zf_dag_check.dir/src/core/zf_dag_check_main.cpp.o -c /home/cat/projects/ZeroFlow-Edge/src/core/zf_dag_check_main.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/src/core/zf_dag_check_main.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -DGTEST_HAS_PTHREAD=1 -std=c++17 -o CMakeFiles/test_day1_contracts.dir/tests/unit/test_day1_contracts.cpp.o -c /home/cat/projects/ZeroFlow-Edge/tests/unit/test_day1_contracts.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/tests/unit/test_day1_contracts.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -DGTEST_HAS_PTHREAD=1 -std=c++17 -o CMakeFiles/test_dag_parser.dir/tests/unit/test_dag_parser.cpp.o -c /home/cat/projects/ZeroFlow-Edge/tests/unit/test_dag_parser.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/tests/unit/test_dag_parser.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -DGTEST_HAS_PTHREAD=1 -std=c++17 -o CMakeFiles/test_shm_allocator.dir/tests/unit/test_shm_allocator.cpp.o -c /home/cat/projects/ZeroFlow-Edge/tests/unit/test_shm_allocator.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/tests/unit/test_shm_allocator.cpp"
+},
+{
+  "directory": "/home/cat/projects/ZeroFlow-Edge/build-release",
+  "command": "/usr/bin/c++ -I/home/cat/projects/ZeroFlow-Edge/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Werror=return-type -std=c++17 -o CMakeFiles/bench_shm_pool_stress.dir/tests/benchmark/bench_shm_pool_stress.cpp.o -c /home/cat/projects/ZeroFlow-Edge/tests/benchmark/bench_shm_pool_stress.cpp",
+  "file": "/home/cat/projects/ZeroFlow-Edge/tests/benchmark/bench_shm_pool_stress.cpp"
+}
+]
